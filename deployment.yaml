@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: video-app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: video-app
+  template:
+    metadata:
+      labels:
+        app: video-app
+    spec:
+      containers:
+      - name: video-app
+        image: public/SampleVideo_1280x720_1mb.mp4
+        ports:
+        - containerPort: 3000

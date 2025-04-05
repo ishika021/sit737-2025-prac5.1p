@@ -28,35 +28,3 @@ docker-compose build
 
 ```bash
 docker-compose up
-
-#### 4. Apply Kubernetes Deployment & Service
-
-kubectl apply -f deployment.yaml
-kubectl apply -f service.yaml
-kubectl get pods
-kubectl get svc
-
-#### 5. Access the App in Browser
-
-kubectl get svc video-app-service
-
-#### 6. Then visit
-
-http://localhost:3000
-
-
-#### Files Included
-
-app.js
-package.json
-Dockerfile
-public/SampleVideo_1280x720_1mb.mp4
-deployment.yaml
-service.yaml
-README.md
-
-#### Task Outcome
-
-Successfully deployed Dockerized Node.js video app on Kubernetes.
-Able to access and interact with the application in browser.
-All deliverables pushed to GitHub repository and documented properly.
